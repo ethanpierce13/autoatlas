@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autoatlas</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<%= render 'layouts/header' %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <%= yield %>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="sidebar">
+            <h3>My sidebar</h3>
+            <p>Click on things</p>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
