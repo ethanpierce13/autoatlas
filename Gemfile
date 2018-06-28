@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
 
+# Use Devise to create user profiles
+gem 'devise'
 # Use Bootstrap
 gem 'bootstrap', '~> 4.1.1'
 # Install jQuery
